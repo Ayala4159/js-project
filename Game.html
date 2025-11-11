@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/Game.css">
+   <script defer src="js/Game.js"></script>
+   <link rel="icon" href="images/icon.png">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="life">
+            <div class="l l1"></div>
+            <div class="l l2"></div>
+            <div class="l l3"></div>
+        </div>
+        <div class="pointes">הניקוד שלך:</div>
+        <div class="time">זמן נותר: 02:00</div>
+    </header>
+    <div class="start">לחץ ימינה או שמאלה על מנת להתחיל<div>...שים ❤! הזמן כבר יורד</div></div>
+    <div class="sky">
+        <div class="clouds" id="cloud1">
+            <div class="cloud" id="c1"></div>
+            <div class="cloud" id="c2"></div>
+            <div class="cloud" id="c3"></div>
+            <div class="cloud" id="c4"></div>
+            <div class="cloud" id="c5"></div>
+        </div>
+        <div class="clouds" id="cloud2">
+            <div class="cloud" id="c1"></div>
+            <div class="cloud" id="c2"></div>
+            <div class="cloud" id="c3"></div>
+            <div class="cloud" id="c4"></div>
+            <div class="cloud" id="c5"></div>
+        </div>        
+        <div class="clouds" id="cloud3">
+            <div class="cloud" id="c1"></div>
+            <div class="cloud" id="c2"></div>
+            <div class="cloud" id="c3"></div>
+            <div class="cloud" id="c4"></div>
+            <div class="cloud" id="c5"></div>
+        </div>
+        <div class="hill"></div>
+        <div class="sun"></div>
+    </div>
+    <div class="earth">
+    <div class="way">
+        <div class="mario"></div>
+        <div class="side1"></div>
+        <div class="side2"></div>
+        <div class="pas1 pas"></div>
+        <div class="pas2 pas"></div>
+        <div class="pas3 pas"></div>
+        <!-- <div class="tree t1"></div>
+        <div class="tree t2"></div> -->
+
+        <!-- <div class="try"></div> -->      
+</div>
+    </div>  
+    <div class="mess">
+            <a id="a1" href="./Menu.html">חזרה למשחקים</a>
+            <a id="a2" href="./Game.html">התחל מחדש</a>
+            <div class="c"><b>!!!שברת שיא</b></div> 
+        </div>
+    <audio id="wrong">
+        <source src="./audio/mariofail.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="wow">
+        <source src="./audio/mario-coin-made-with-Voicemod.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="mario">
+        <source src="./audio/war-without-reason-loop-made-with-Voicemod.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="over">
+        <source src="./audio/end.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="timeup">
+        <source src="./audio/extra lives.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="win">
+        <source src="./audio/win.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

@@ -1,0 +1,558 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.start {
+    z-index: 2000;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 100px;
+    color: cyan;
+    text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.884);
+    text-align: center;
+    animation: 1s ease-in 0s infinite normal start;
+}
+.start div{
+    font-size: 30px;
+    color: red;
+    position: absolute;
+}
+
+@keyframes start {
+    50% {
+        color: darkslategrey;
+    }
+
+    100% {
+        color: cyan;
+    }
+}
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 6.5vh;
+    width: 100%;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.253);
+}
+
+.life {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 5px;
+    gap: 5px;
+}
+
+.l {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    z-index: 100;
+    background-color: brown;
+    background-image: url(../images/ma.png);
+    border-radius: 20px;
+}
+
+.pointes {
+    direction: rtl;
+    color: white;
+    font-size: 40px;
+}
+
+.time {
+    color: white;
+    font-size: 40px;
+}
+
+@keyframes onOff {
+    0% {
+        color: transparent;
+    }
+
+    50% {
+        color: red;
+    }
+}
+
+.sky {
+    z-index: 0;
+    width: 100vw;
+    height: 50vh;
+    background-color: deepskyblue;
+    animation: 180s ease-in 0s normal forwards color;
+}
+
+@keyframes color {
+    100% {
+        background-color: black;
+    }
+}
+
+.clouds {
+    position: absolute;
+    z-index: 3;
+    animation: 5s ease 0s normal infinite move;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-100px)
+    }
+
+    50% {
+        transform: translateX(200px);
+    }
+
+    100% {
+        transform: translateX(-100px);
+    }
+}
+
+#cloud1 {
+    top: 200px;
+    left: 100px;
+}
+
+#cloud2 {
+    top: 70px;
+    left: 1000px;
+}
+
+#cloud3 {
+    top: 150px;
+    left: 1500px;
+
+}
+
+.cloud {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    background-color: white;
+}
+
+#c1 {
+    top: 10px;
+}
+
+#c2 {
+    top: -40px;
+    right: 30px;
+}
+
+#c3 {
+    left: 50px;
+    top: -120px;
+}
+
+#c4 {
+    top: -300px;
+    left: 80px;
+}
+
+#c5 {
+    top: -350px;
+    left: 120px;
+}
+
+#c6 {
+    top: -200px;
+    left: 70px;
+}
+
+.hill {
+    z-index: 2;
+    height: 200px;
+    width: 100vw;
+    background-image: url(../images/hill.png);
+    background-size: cover;
+    position: absolute;
+    top: 29.2%;
+    /* left: 0%; */
+}
+
+.sun {
+    width: 340px;
+    height: 150px;
+    background-image: url(../images/sun.png);
+    background-size: contain;
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 34%;
+    left: 40%;
+    animation: 120s ease-in 0s normal forwards sunset;
+}
+
+@keyframes sunset {
+    100% {
+        top: 50%;
+        left: 50%;
+        width: 0px;
+        height: 0px;
+        background-image: url(../images/sun2.png);
+    }
+}
+
+.earth {
+    position: relative;
+    z-index: 3;
+    width: 100vw;
+    height: 50vh;
+    background-color: darkseagreen;
+    display: flex;
+    justify-content: center;
+    animation: 180s ease-in 0s normal forwards color1;
+
+}
+
+@keyframes color1 {
+    100% {
+        background-color: rgb(53, 68, 53);
+    }
+}
+
+.way {
+    height: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.side1 {
+    height: 0px;
+    width: 0px;
+    border-top: 235px darkseagreen solid;
+    border-left: 235px darkseagreen solid;
+    border-bottom: 235px transparent solid;
+    border-right: 235px transparent solid;
+    animation: 180s ease-in 0s normal forwards color2;
+
+}
+
+@keyframes color2 {
+    100% {
+        border-top: 235px rgb(53, 68, 53) solid;
+        border-left: 235px rgb(53, 68, 53) solid;
+    }
+}
+
+.side2 {
+    height: 0px;
+    width: 0px;
+    border-top: 235px darkseagreen solid;
+    border-right: 235px darkseagreen solid;
+    border-bottom: 235px transparent solid;
+    border-left: 235px transparent solid;
+    animation: 180s ease-in 0s normal forwards color3;
+}
+
+@keyframes color3 {
+    100% {
+        border-top: 235px rgb(53, 68, 53) solid;
+        border-right: 235px rgb(53, 68, 53) solid;
+    }
+}
+
+
+.mario {
+    background-image: url(../images/mario1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 999;
+    bottom: 0px;
+    left: 900px;
+    height: 60vh;
+    width: 30vw;
+    animation: 0.35s ease-in 0s infinite change, 5s ease-in 119s normal forwards sss;
+}
+
+@keyframes fall {
+    100% {
+        height: 10px;
+        width: 5px;
+        left: 32%;
+        top: 65%;
+        background-image: url(../images/boom.gif);
+    }
+}
+
+@keyframes fall2 {
+    100% {
+        height: 10px;
+        width: 5px;
+        top: 65%;
+        left: 54%;
+        background-image: url(../images/boom.gif);
+
+    }
+}
+
+@keyframes change {
+    0% {
+        background-image: url(../images/mario1.png);
+    }
+
+    100% {
+        background-image: url(../images/mario2.png);
+    }
+}
+
+@keyframes sss {
+    99% {
+        display: block;
+    }
+
+    100% {
+        height: 2vh;
+        width: 1vw;
+        bottom: 465px;
+        left: 955px;
+        display: none;
+    }
+}
+
+.pas {
+    background-image: url(../images/pas.png);
+    background-size: contain;
+    height: 50px;
+    width: 10px;
+    z-index: 997;
+    position: absolute;
+    left: 49.7%;
+    top: 0%;
+    visibility: hidden;
+
+}
+
+.pas1 {
+    animation: 1.5s ease-in-out 0s normal infinite run;
+}
+
+.pas2 {
+    animation: 1.5s ease-in-out 0.5s normal infinite run;
+}
+
+.pas3 {
+    animation: 1.5s ease-in-out 1s normal infinite run;
+}
+
+@keyframes run {
+    0% {
+        visibility: visible;
+    }
+
+    100% {
+        height: 147px;
+        ;
+        width: 30px;
+        top: 110%;
+        left: 49.7%;
+    }
+}
+
+.bor {
+    border-radius: 50%;
+    width: 15px;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    
+}
+
+.bor2 {
+    left: 966px;
+    animation: 2s ease-in-out 0s normal forwards runR;
+}
+
+.bor1 {
+    left: 945px;
+    animation: 2s ease-in-out 0s normal forwards runL;
+}
+
+@keyframes runR {
+    100% {
+        height: 120px;
+        width: 290px;
+        left: 54%;
+    }
+}
+
+@keyframes runL {
+    100% {
+        height: 120px;
+        width: 290px;
+        left: 32%;
+    }
+}
+
+.money {
+    border-radius: 50%;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/money.gif);
+    position: absolute;
+    /* top: 53vh; */
+}
+
+.money1 {
+    left: 966px;
+    animation: 2s ease-in-out 0s normal forwards runR2;
+}
+
+.money2 {
+    left: 910px;
+    animation: 2s ease-in-out 0s normal forwards runL2;
+}
+
+@keyframes runR2 {
+    100% {
+        height: 130px;
+        width: 130px;
+        left: 60%;
+    }
+}
+
+@keyframes runL2 {
+    100% {
+        height: 130px;
+        width: 130px;
+        left: 32%
+    }
+}
+
+.tree {
+    height: 15%;
+    width: 15%;
+    position: absolute;
+    top: 38vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/tree1.png);
+    z-index: 50;
+}
+
+.t1 {
+    height: 15%;
+    width: 15%;
+    position: absolute;
+    top: 38vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/tree1.png);
+    z-index: 50;
+    background-image: url(../images/tree1.png);
+    animation: 2s ease-in 3s infinite normal tree1;
+}
+
+@keyframes tree1 {
+    100% {
+        top: 100%;
+        /* left: 0%; */
+        width: 50%;
+        height: 50%;
+    }
+}
+
+/* @keyframes tree1{
+        100%{
+            height:30000px;;
+            width: 30000x;
+            top:110%;
+            left: 00px;
+        }
+    } */
+.t2 {
+    background-image: url(../images/tree2.png);
+    right: 20%;
+    animation: 2s ease-in-out 0s normal forwards tree;
+}
+
+.mess {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    display: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    position: absolute;
+    left: 20%;
+    top: 7%;
+    border: groove 20px red;
+    background-image: url(../images/gameOverMario.png);
+}
+
+@keyframes fail {
+    0% {
+        width: 0px;
+        height: 0px;
+
+    }
+
+    100% {
+        /* box-shadow: 0px 0px 1000px black; */
+        width: 1180px;
+        height: 800px;
+    }
+}
+
+a {
+    color: transparent;
+    position: absolute;
+    top: 75%;
+    text-decoration: none;
+    padding: 1vh;
+    border-radius: 20px;
+    font-size: 25px;
+    animation: 0.5s ease-in-out 1.5s normal forwards a;
+}
+
+#a2 {
+    left: 30%;
+}
+
+#a1 {
+    right: 30%;
+}
+
+@keyframes a {
+    100% {
+        color: white;
+        box-shadow: 0px 0px 10px crimson;
+        background-image: radial-gradient(green, yellow);
+        border: solid 10px rgba(255, 255, 0, 0.164);
+    }
+}
+
+.c {
+    font-size: 50px;
+    color: transparent;
+    position: absolute;
+    bottom: 15px;
+    /* animation: 0.5s ease-in-out 1.5s normal forwards c; */
+}
+
+@keyframes c {
+    100% {
+        color: wheat;
+        text-shadow: 7px 7px 10px black;
+    }
+}

@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+h1{
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    color:crimson;
+    box-shadow: 0px 0px 10px  crimson;
+    background-color:rgba(255, 223, 165, 0.747);
+
+}
+.backGround{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: red; */
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.623);
+    background-image: url(../images/SSSS.gif);
+    position: fixed;
+    top: 0;
+    z-index: -100;
+    background-repeat:repeat ;
+    background-size:auto;
+}
+main{ 
+    width: 700px;
+    height: 700px;
+    background-color: rgba(245, 222, 179, 0.596);
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+    box-shadow: 0px 0px 2000px  wheat;
+
+}
+.head{
+    grid-row-start: 3;
+    grid-column-start: 3;
+    background-image: radial-gradient(red ,rgb(163, 0, 0));
+    box-shadow:  0px 0px 20px  crimson;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    z-index: 1;
+    position: relative;
+}
+.eye{
+    left: 35%;
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 4px solid white;
+    position: absolute;
+}
+.e1{
+    top:-2px;
+}
+.e2{
+    bottom: -2px;
+}
+.white{
+    background-color: white;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+}
+.w1{
+    left:10%;
+    top:10%;
+    animation: 0.5s ease-in 0s infinite normal moveE1;
+
+}
+.w2{
+    left: 48%;
+    bottom: 5%;
+    animation: 0.5s ease-in 0s infinite normal moveE2;
+
+}
+@keyframes moveE1{
+    50%{
+        left: 48%;  
+    }
+}
+@keyframes moveE2{
+    50%{
+        left:10%;
+    }
+    
+}
+.mouth{
+    background-image: url(../images/sssnake.png);
+    height: 20px;
+    width: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -2;
+    left: 85%;
+    top: 35%;
+    animation: 0.5s ease-in-out 0s infinite normal mouth;
+}
+@keyframes mouth{
+    50%{
+        width: 0%;
+    }
+    100%{
+        width: 50px;
+ 
+    }
+}
+.food{
+    height: 70px;
+    width: 70px;
+    background-image: url(../images/SSSS.gif);
+    background-size: contain;
+    border-radius: 50%;
+}
+.ss{
+    grid-row-start: 3;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+}
+.s1{
+    background-image:radial-gradient(rgb(255, 185, 35),rgb(187, 84, 0)) ;
+    box-shadow:0px 0px 20px rgb(255, 115, 0);
+}
+.s2{
+    background-image:radial-gradient(rgb(255, 235, 122),rgb(218, 185, 0));
+    box-shadow:0px 0px 20px rgb(255, 196, 0);
+
+}
+.mess{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 20px;
+    display: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@keyframes fail{
+    0%{
+        background-image: url(../images/gameover.jpg);
+        width: 0px;
+        height: 0px;
+        
+    }
+    100%{
+        box-shadow: 0px 0px 2000px  magenta;
+        background-image: url(../images/gameover.jpg);
+        width: 900px;
+        height: 630px;
+    }
+}
+a{
+    color: transparent;
+    position: absolute;
+    top:75%;
+    text-decoration: none;
+    padding: 1vh;
+    border-radius: 20px;
+    font-size: 25px;
+    animation: 0.5s ease-in-out 1.5s normal forwards a;
+}
+#a2{
+    left:30%;
+}
+#a1{
+    right: 30%;
+}
+@keyframes a{
+    100%{  
+        color:crimson;
+        box-shadow: 0px 0px 10px  crimson;
+        background-color:rgba(255, 217, 0, 0.715);
+    
+    }
+}
+.c{
+    display: none;
+    font-size: 50px;
+    color: transparent;
+    animation: 0.5s ease-in-out 1.5s normal forwards c;
+}
+@keyframes c{
+    100%{  
+        color:crimson;
+    }
+}
+
+
+/* כתום צהוב ירוק תכלת כחול סגול אדום */

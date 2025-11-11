@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+.backGround{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/background.webp);
+    position: fixed;
+    top: 0;
+    z-index: -100;
+    background-repeat:no-repeat ;
+    background-size:cover;
+}
+h1{
+    box-shadow: 0px 0px 500px rgba(253, 29, 149, 0.521);
+    background-color:rgba(253, 29, 149, 0.521);
+    border-top: 3px solid white ;
+    border-bottom:  3px solid white;
+    text-align: center;
+    padding: 5px;
+    direction:rtl ;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.pp{
+    position: relative;
+    top: 30vh;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.596);
+    font-size: 13px;
+    padding: 2px;
+    border-radius: 20px;
+    direction:rtl ;
+}
+main{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.img{
+    border-radius: 20px;
+    border: 20px solid rgb(160, 38, 103);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    height: 410px;
+    width: 410px;
+    margin-left: 4vw;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+.game{
+    box-shadow: 0px 0px 500px rgb(160, 38, 103);
+    height: 370px;
+    width: 400px;
+    background-repeat:no-repeat ;
+    background-size:cover;
+    border: white 3px solid;
+   
+}
+.game:hover .Oopss{ 
+    animation: 1s ease-in-out 0s normal forwards color;
+}
+@keyframes color{
+    100%{
+        color: rgba(197, 229, 248, 0.664);
+    }
+}
+@keyframes rotate{
+    0%{
+        transform:rotateY(180deg)
+    }
+
+    100%{
+        transform:rotateY(360deg);  
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.425);
+        background-image:url(../images/build.jpg);
+        color: white;
+    }
+    
+}
+@keyframes rotate1{
+    0%{
+        transform:rotateY(180deg)
+    }
+
+    100%{
+        transform:rotateY(360deg);  
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.425);
+        background-image:url(../images/wins.webp);
+        color: white;
+    }
+}
+#g1:hover{
+    animation: 1s ease-in-out 0s normal forwards rotate1;
+}
+#g2:hover{
+    animation: 1s  ease-in-out 0s normal forwards rotate1;
+
+}#g3:hover{
+    animation: 1s  ease-in-out 0s normal forwards rotate;
+
+}#g4:hover{
+    animation: 1s ease-in-out 0s normal forwards rotate;
+
+}#g5:hover{
+    animation: 1s ease-in-out 0s normal forwards rotate;
+}
+#g6:hover{
+    animation: 1s  ease-in-out 0s normal forwards rotate;
+}
+#g1{
+    /* transform:rotateY(180deg); */
+    background-image:url(../images/Mario.png) ;
+}
+#g2{
+    background-image:url(../images/snake.png) ;
+
+}
+#g3{
+    background-image:url(../images/pinguin.PNG) ;
+}
+#g4{
+    background-image:url(../images/lego.webp) ;
+}
+#g5{
+        background-image:url(../images/birds.png) ;
+}
+#g6{
+    background-image:url(../images/fall.png) ;
+}
+.gameName{
+    position: relative;
+    top: -3px;;
+    left: 25%;
+    height: 5vh;
+    width: 50%;
+    border-bottom: white 3px solid ;
+    border-left:  white 3px solid;
+    border-right:  white 3px solid;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px ;
+    background-color: rgb(160, 38, 103);
+}
+.Oopss{ 
+
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none;
+    font-size: 50px;
+    color: transparent;
+}
+.g11 ,.g22{
+    padding: 50px;
+    height: 70%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+footer{
+    margin-top: 5vh;
+    border-top:3px solid white ;
+    padding: 5px;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    background-color:rgba(253, 29, 149, 0.521);
+    width: 100vw;
+    text-align: center;
+    font-size: 20px;
+}
+.linkes{
+    position: fixed;
+    top: 45%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: ceneter;
+    justify-content: start;
+    gap: 5px;
+}
+.m{
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:2px ;
+    width: 100px;
+    background-color: rgba(160, 38, 103, 0.822);
+    color: rgba(255, 255, 255, 0.801);
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-right: 2px white solid;
+    border-bottom: 2px white solid;
+    border-top: 2px white solid;
+}
+.m:hover{
+    background-color: rgba(218, 16, 123, 0.822);
+    animation: 0.3s ease-in 0s normal forwards www;
+}
+.menu{
+    background-color: rgba(218, 16, 123, 0.822);
+    font-size: 30px;
+    width: 130px;
+}
+@keyframes www{
+    100%{
+        font-size: 30px;
+        width: 130px;
+    }
+}
